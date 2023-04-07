@@ -1,0 +1,232 @@
+@font-face {
+  font-family: "englishFont";
+  src: url("./englishFont.ttf") format("truetype");
+}
+@font-face {
+  font-family: "koreanFont";
+  src: url("./koreanFont.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f0fff0;
+  font-family: "englishFont", "koreanFont";
+}
+
+button {
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+#shield {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: black;
+  opacity: 0.7;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#shield2 {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#bar {
+  width: 32vw;
+  max-width: 300px;
+  height: 100vh;
+  background-color: #d2fad2;
+  transform: skew(-4deg);
+  position: absolute;
+  left: -5vw;
+  box-shadow: 10px 10px 5px 0 #a0c8a0;
+  padding: 6vh 2vw 0 6vw;
+  box-sizing: border-box;
+}
+
+#logo,
+#myPage,
+#test,
+#help {
+  text-align: center;
+  cursor: default;
+  margin-bottom: 3vh;
+  font-size: 24px;
+}
+
+#logo {
+  color: #73a75d;
+  font-size: 32px;
+  margin-bottom: 5vh;
+}
+
+#myPage,
+#test,
+#help {
+  color: #93c47d;
+  transform: skew(-4deg);
+  width: 100%;
+  padding: 1vh 0;
+}
+
+#myPage:hover,
+#test:hover,
+#help:hover {
+  background-color: #cfff9a;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  cursor: default;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  left: 100%;
+  top: 0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.contents {
+  padding: 1vh 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.contents:hover {
+  background-color: #cfff9a;
+}
+
+#developer {
+  position: absolute;
+  right: 1vw;
+  bottom: 1vh;
+}
+
+#main_div {
+  width: 60vw;
+  height: 100vh;
+  margin-left: 32vw;
+  padding: 5vh 0;
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+
+#account_header {
+  margin: 12vh 0 4vh 1vw;
+  font-size: 24px;
+}
+
+.account_infos {
+  margin: 2vh 0 1vh 2vw;
+  font-size: 20px;
+}
+
+#leave {
+  border: 1px solid black;
+  border-radius: 4px;
+  display: inline-block;
+  padding: 4px 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#myMemo_header {
+  margin: 6vh 0 2vh 1vw;
+  font-size: 24px;
+}
+
+.memo_settings {
+  margin-left: 2vw;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.memo_select {
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 2px 4px;
+  border: 1px solid black;
+}
+
+#word_table,
+#word_table2 {
+  margin-top: 2vh;
+}
+
+#word_edit_div {
+  background-color: white;
+}
+
+#word_edit_table_div {
+  display: flex;
+}
+
+.word_table_number {
+  box-sizing: border-box;
+  border: 1px solid black;
+  width: 30px;
+  text-align: center;
+}
+
+.word_table_td {
+  box-sizing: border-box;
+  border: 1px solid black;
+  width: 150px;
+  max-width: 150px;
+  padding: 0 10px 0 10px;
+  overflow-x: scroll;
+}
+
+.list_buttons {
+  padding: 0.2vh 1vw;
+  border: 1px solid black;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#add_word {
+  padding: 0.5vh 1vw;
+  justify-content: space-evenly;
+}
+
+.hide {
+  opacity: 0;
+}
