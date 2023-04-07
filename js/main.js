@@ -90,7 +90,7 @@ rsvp.addEventListener("click", () => {
 });
 
 async function login() {
-  signInWithPopup(auth, provider).then(async function (result) {
+  signInWithPopup(auth, provider).then(async function(result) {
     const user = result.user;
     let docRef = doc(db, "users", auth.currentUser.uid);
     let docSnap = await getDoc(docRef);
